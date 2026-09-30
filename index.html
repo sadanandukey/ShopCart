@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="ShopCart — a fast, modular e-commerce product catalog capstone project." />
+<title>ShopCart</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-row">
+      <a href="/" data-link class="brand">🛒 ShopCart</a>
+
+      <nav class="main-nav">
+        <a href="/" data-link data-route="home">Home</a>
+        <a href="/products" data-link data-route="products">Products</a>
+        <a href="/about" data-link data-route="about">About</a>
+        <a href="/cart" data-link data-route="cart">
+          Cart <span id="cartCount" class="cart-badge">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="container app-view" aria-live="polite">
+    <!-- Rendered dynamically by router.js -->
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Sadanand Nandkishor Ukey — ShopCart Website</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+
+</html>
